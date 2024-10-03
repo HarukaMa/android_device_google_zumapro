@@ -241,7 +241,7 @@ BOARD_USES_GENERIC_AUDIO := true
 
 $(call soong_config_set,aoc_audio_func,ext_hidl,true)
 
-ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 $(call soong_config_set,aoc_audio_func,dump_usecase_data,true)
 $(call soong_config_set,aoc_audio_func,hal_socket_control,true)
 $(call soong_config_set,aoc_audio_func,record_tuning_keys,true)
@@ -418,7 +418,7 @@ BOARD_SYSTEM_KERNEL_MODULES := $(addprefix $(KERNEL_MODULE_DIR)/, $(notdir $(BOA
 # Using BUILD_COPY_HEADERS
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
 
-include device/google/zumapro-sepolicy/zumapro-sepolicy.mk
+include device/google/zumapro/sepolicy/zumapro-sepolicy.mk
 
 # Battery options
 BOARD_KERNEL_CMDLINE += at24.write_timeout=100
@@ -431,3 +431,5 @@ BOARD_PVMFWIMAGE_PARTITION_SIZE := 0x00100000
 
 # pick up library for cleaning digital car keys on factory reset
 -include vendor/google_devices/gs-common/proprietary/BoardConfigVendor.mk
+
+include device/google/zumapro/BoardConfigLineage.mk

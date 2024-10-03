@@ -48,4 +48,4 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 # PRODUCT_RESTRICT_VENDOR_FILES := all
 
 # b/189477034: Bypass build time check on uses_libs until vendor fixes all their apps
-PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+# PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
