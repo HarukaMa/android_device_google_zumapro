@@ -69,7 +69,6 @@
 /dev/logbuffer_maxfg_secondary_monitor                                      u:object_r:logbuffer_device:s0
 /dev/logbuffer_tcpm                                                         u:object_r:logbuffer_device:s0
 /dev/logbuffer_usbpd                                                        u:object_r:logbuffer_device:s0
-/dev/logbuffer_pogo_transport                                               u:object_r:logbuffer_device:s0
 /dev/ttySAC0                                                                u:object_r:tty_device:s0
 /dev/bigwave                                                                u:object_r:video_device:s0
 /dev/watchdog0                                                              u:object_r:watchdog_device:s0
@@ -173,4 +172,3 @@
 /data/vendor/bluetooth(/.*)?                                                u:object_r:vendor_bt_data_file:s0
 /data/vendor/chre(/.*)?                                                     u:object_r:chre_data_file:s0
 /data/vendor/misc/qti_fp(/.*)?                                              u:object_r:vendor_fingerprint_data_file:s0
-/data/vendor/fingerprint(/.*)?                                              u:object_r:fingerprint_vendor_data_file:s0
